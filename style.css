@@ -1,0 +1,172 @@
+.container {
+  height: 100vh;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.s-one {
+  color: #fff;
+  background-color: rgb(245, 214, 168);
+}
+
+.s-two {
+  color: #fff;
+  background-color: rgb(198, 179, 158);
+}
+
+.s-three {
+  color: #fff;
+  background-color: rgb(175, 134, 81);
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand img {
+  height: auto;
+  width: 100px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #2b1e15 !important;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #f00 !important;
+}
+
+main p {
+  text-align: justify;
+  color: black;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+main h2 {
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main img {
+  width: 500px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: black;
+}
+
+li {
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #2b1e15;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+fieldset {
+  display: none;
+}
+
+fieldset:first-of-type {
+  display: block;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2b1e15;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.prev-btn {
+  background-color: #bbb;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #008CBA;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}

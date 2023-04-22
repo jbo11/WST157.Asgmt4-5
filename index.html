@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>WST 157: Assignment 4 and 5</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+    <a class="navbar-brand" href="#"><img src="assets/logo.png" alt=""></a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#s-one">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#s-two">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#s-three">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="s-one" class="scroll s-one" data-section-name="Home">
+    <div class="container">
+      <main>
+        <h2>The Love Affair with Coffee: A Humorous Ode to the Elixir of Life</h2>
+        <img src="assets/coffee1.png" alt="A cup of coffee">
+        <p>Ah, coffee. The elixir of life. The nectar of the gods. The magical potion that transforms us from groggy
+          zombies to productive members of society. Is there anything more wonderful than a freshly brewed cup of coffee
+          in the morning?<br><br>
+          As a self-proclaimed coffee addict, I can confidently say that there is not. I love coffee so much that I've
+          considered getting a tattoo of a coffee bean on my forehead (lol). But in all seriousness, I don't know what I
+          would do without my daily dose of caffeine.<br><br>
+          There's something about the smell of coffee that just makes me feel alive. It's like my brain is saying, "Wake
+          up, buddy! It's time to conquer the day!" And let's be real, sometimes we need all the help we can
+          get.<br><br>
+          But coffee isn't just a morning pick-me-up. It's a way of life. It's a social lubricant, a creative catalyst,
+          and a source of comfort in times of stress. It's the glue that holds our society together.<br><br>
+          Sure, there are some people out there who don't like coffee. To those people, I say, "What's wrong with you?"
+          Just kidding (kind of). To each their own, I suppose. But for the rest of us, coffee is like a warm hug in a
+          mug.<br><br>
+          I don't know about you, but I take my coffee seriously. I don't just drink any old swill. No, no, no. I like
+          my coffee like I like my humor: dark, strong, and a little bit bitter. And don't even get me started on the
+          different brewing methods. French press, pour-over, AeroPress...the possibilities are endless.<br><br>
+          So if you're a fellow coffee lover, I raise my mug to you. May your mornings be bright, your brews be strong,
+          and your milk froth be silky smooth. And if you're not a coffee lover, well, I guess there's always decaf.
+          Just kidding, decaf is a sin. Cheers! </p>
+        </main-2>
+    </div>
+  </section>
+
+  <section id="s-two" class="scroll s-two" data-section-name="Sec 2">
+    <div class="container">
+      <main>
+        <div style="text-align:center;">
+          <img src="assets/aboutMe.png">
+        </div>
+        <h2>About Me</h2>
+        <p>
+          I'm a curious guy who loves to learn and has a deep appreciation for the simple things in life, like a good
+          cup of coffee.
+          <br><br>
+          For as long as I can remember, I've been fascinated by the world around me and have always had a thirst for
+          knowledge. Whether it's exploring new cultures, reading about science and technology, or trying out new
+          hobbies, I'm always eager to learn and discover new things.
+          <br><br>
+          At the same time, I'm someone who finds joy in the little moments of life. I love the ritual of making and
+          enjoying coffee, and I appreciate the simple pleasures that can be found in everyday activities.
+        </p>
+        <h2>Favorite Local Spots</h2>
+        <ul>
+          <li>The Huntington Library - South Pasadena, CA</li>
+          <li>Point Dume State Beach - Malibu, CA</li>
+          <li>Cafe on 27 - Topanga, CA</li>
+          <li>Juicy Ladies - Woodland Hills, CA</li>
+          <li>Ocean View Cafe - Manhattan Beach, CA</li>
+        </ul>
+      </main>
+    </div>
+  </section>
+
+  <section id="s-three" class="scroll s-three" data-section-name="Sec 3">
+    <div class="form-container">
+      <h2>Never Miss a Sip: <em>Sign Up for Coffee News and the Latest Recipes!</em></h2>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <form id="multi-step-form" method="post" action="">
+        <fieldset>
+          <legend>Step 1: Email Subscription</legend>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-message" id="email-error"></span>
+          <button type="button" class="next-btn" onclick="validateEmail()">Next</button>
+        </fieldset>
+        <fieldset>
+          <legend>Step 2: Personal Details</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required>
+          <button type="button" class="prev-btn" onclick="goToPrevious()">Previous</button>
+          <button type="button" class="next-btn" onclick="goToNext()">Next</button>
+        </fieldset>
+        <fieldset>
+          <legend>Step 3: Payment Information</legend>
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number" required>
+          <label for="expiry-date">Expiry Date:</label>
+          <input type="text" id="expiry-date" name="expiry-date" required>
+          <label for="expiry-date">CVV:</label>
+          <input type="text" id="cvv-number" name="cvv-number" required>
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="submit" class="submit-btn">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    $(function () {
+      $.scrollify({
+        section: ".scroll",
+        sectionName: "data-section-name",
+        easing: "easeOutExpo",
+        scrollSpeed: 1100,
+        offset: 0,
+        scrollbars: false,
+        before: function (i, sections) {
+          var ref = sections[i].attr("data-section-name");
+          $(".navbar-nav .nav-item").removeClass("active");
+          $(".navbar-nav .nav-item a[href='#" + ref + "']").parent().addClass("active");
+        },
+        after: function (i, sections) {
+          var ref = sections[i].attr("data-section-name");
+          $(".navbar-nav .nav-item").removeClass("active");
+          $(".navbar-nav .nav-item a[href='#" + ref + "']").parent().addClass("active");
+        }
+      });
+
+      $(".navbar-nav .nav-item a").on("click", function () {
+        $(".navbar-nav .nav-item").removeClass("active");
+        $(this).parent().addClass("active");
+        $.scrollify.move($(this).attr("href"));
+      });
+    });
+
+    const progressBar = document.querySelector(".progress");
+    const nextBtns = document.querySelectorAll(".next-btn");
+    const prevBtns = document.querySelectorAll(".prev-btn");
+    const form = document.querySelector("#multi-step-form");
+    const emailInput = document.querySelector("#email");
+    const nameInput = document.querySelector("#name");
+    const ageInput = document.querySelector("#age");
+
+    let currentFieldset = 0;
+
+    function updateProgress() {
+      const allFieldsets = document.querySelectorAll("fieldset");
+      const totalFieldsets = allFieldsets.length;
+      const progressPercent = ((currentFieldset + 1) / totalFieldsets) * 100;
+      progressBar.style.width = `${progressPercent}%`;
+    }
+
+    function showFieldset(n) {
+      const allFieldsets = document.querySelectorAll("fieldset");
+      const fieldset = allFieldsets[n];
+      fieldset.style.display = "block";
+      currentFieldset = n;
+      updateProgress();
+    }
+
+    function hideFieldset(n) {
+      const allFieldsets = document.querySelectorAll("fieldset");
+      const fieldset = allFieldsets[n];
+      fieldset.style.display = "none";
+    }
+
+    function handleNextBtnClick() {
+      const currentInput = getCurrentInput();
+      if (currentInput && currentInput.checkValidity()) {
+        hideFieldset(currentFieldset);
+        showFieldset(currentFieldset + 1);
+      } else {
+        currentInput.reportValidity();
+      }
+    }
+
+    function getCurrentInput() {
+      switch (currentFieldset) {
+        case 0:
+          return emailInput;
+        case 1:
+          return nameInput;
+        case 2:
+          return document.querySelector("#card-number");
+        default:
+          return null;
+      }
+    }
+
+    nextBtns.forEach((btn) => {
+      btn.addEventListener("click", handleNextBtnClick);
+    });
+
+    prevBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        hideFieldset(currentFieldset);
+        showFieldset(currentFieldset - 1);
+      });
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      alert("Form submitted successfully!");
+    });
+
+    // Enable next button even without entry details
+    form.addEventListener("change", () => {
+      const currentInput = getCurrentInput();
+      if (currentInput && currentInput.value.length > 0) {
+        nextBtns[currentFieldset].removeAttribute("disabled");
+      } else {
+        nextBtns[currentFieldset].setAttribute("disabled", "disabled");
+      }
+    });
+
+    showFieldset(currentFieldset);
+  </script>
+
+
+</body>
+
+</html>
